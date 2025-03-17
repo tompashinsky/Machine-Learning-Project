@@ -13,7 +13,6 @@ This project was submitted by Niv Noyman and Tom Pashinsky<br>
 &emsp;4. <b>Categorical variables</b><br>
 &emsp;5. <b>Statistics and Graphical Representation</b><br>
 <br>
-
 ### Histograms
 Down here, we plotted histograms for the numeric features: 
 ### Distributions <br>
@@ -65,46 +64,26 @@ After creating the features of the technology types, we had a total amount of 13
 - **PCA** - before implementing it, we were debating which method to choose. We were afraid that using PCA will cost in losing information and geting lower peformance. On the other hand, we noticed that the "Feature Selection" method takes too much time to run the models. Finally, we decided to use the PCA method, with the main reason being due to runtime considerations of model training. In order to lose as little information as possible, we defined in the PCA implementation that the variance will keep 99% of the variance of the original dataset.
 <br>
 <br>
-<br>
-<br>
-<br>
-
-# **Part C - Running models**
-In this part, we will train 4 selected models.
-First, we will implement PCA and split the training dataset to "train" and "validation":
-## Basic models
-## 1. Logistic Regression model:
-## 2. Naive Bayes model:
-## Advanced models
-## 1. Random Forest model:
-## 2. Multi-Layer Perceptron model:
-### It seems that the MLP is our best model!
+<h2>Part C - Creating & training models :hammer:</h2>
+In this part, we chose 4 models and trained them:<br>
+&emsp; 1. Logistic Regression model<br>
+&emsp; 2. Naive Bayes model<br>
+&emsp; 3. Random Forest model<br>
+&emsp; 4. Multi-Layer Perceptron model (MLP)<br><br>
+After implementing PCA, spliting the training dataset to "train" and "validation", we saw that the MLP model got the best results.
 So we will analyze its performance and later on run it with the Test dataset.
 ## Feature Importance
 We want to know which features are mostly contribute the model's performance. <br>
 Since we learned in class only "Feature Importance" method which is used only for Random Forest model, we will use a technique called **"Permutation Feature Importance"**. This method helps to measure how much the model’s performance **decreases** when the values of a particular feature are randomly shuffled or permuted while keeping other variables unchanged.
 <br>
 <br>
-<br>
-<br>
-<br>
-
-# **Part D - Model Evaluating**
+<h2>Part D - Model Evaluating :pencil:</h2>
 ### Here we can see again the Confusion Matrix of the MLP model:
 ### Here we will run our MLP model without using K-Cross validation:
 ## Here you can see all the 4 ROC curves of the model above:
 <br>
 <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-# **Part E - Prediction**
+<h2>Part E - Prediction :crystal_ball:</h2>
 ### First, we will create a function that units all the functions from the preprocessing stage:
 # Pipline
 Here, you can run the important things:
