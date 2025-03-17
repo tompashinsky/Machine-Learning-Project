@@ -28,7 +28,7 @@ In this section we will addressed issues that arose during the exploration stage
 4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0'<br>
 &emsp;occurrences, assigninghigher values to categories more associated with label '1'.<br>
 5. <b>Normalization:</b> Features with wide ranges were scaled using StandardScaler to prevent bias from<br>
-&emsp;unnormalized data.
+&emsp;unnormalized data.<br>
 6. <b>Dimensionality Reduction:</b><br>
 &emsp;- <b>Dropped irrelevant columns</b> ("ID", "label") and selected only the top 20 most relevant technology features.<br>
 &emsp;- <b>Applied PCA</b> to retain 99% of the variance while reducing dimensionality for faster model training<br>
