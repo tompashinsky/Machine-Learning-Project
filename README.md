@@ -8,7 +8,7 @@ This project was submitted by Niv Noyman and Tom Pashinsky<br>
 <h2>Part A - Exploration :mag_right:</h2>
 <b>First, we analyzed the "train" and "test" datasets:</b><br>
 &emsp;1. <b>Size:</b> How many rows and columns each dataset has?<br> 
-&emsp;2. <b>"ID" unique values:</b> Do all the ID's in the "ID" column appear exactly once?<br>
+&emsp;2. <b>ID unique values:</b> Do all the ID's in the "ID" column appear exactly once?<br>
 &emsp;3. <b>Missing values:</b> How many missing values there are in each column (except the "ID" column)?<br>
 &emsp;4. <b>Categorical variables</b><br>
 &emsp;5. <b>Statistics and Graphical Representation</b><br>
@@ -25,14 +25,9 @@ Here we will check some statistical values of the numeric features (Mean, std, m
 Here we will count how many values there are in each column:
 ### Correlation
 In order to see if there are correlations between the features, we will convert the categorial features to numerical ones (the conversion is only for creating the correlation map, we will convert the categorial features in a different way for building the models later on in the notebook) and then create a correlation map:
-## **Here, we will repeat the exploration stage, this time with the "test" dataset**:
 <br>
 <br>
-<br>
-<br>
-<br>
-
-<h2>Part B - Preprocessing</h2>
+<h2>Part B - Preprocessing :pencil2:</h2>
 
 In this section we will detail issues that arose during the exploration stage. First we implemented the solutions on the train file, and at the end of the notebook we applied everything on the test file. **We note that all the detailed information below refers to the data from the train file only:**
 
