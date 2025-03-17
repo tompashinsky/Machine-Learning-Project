@@ -30,7 +30,7 @@ In order to see if there are correlations between the features, we will convert 
 
 In this section we will detail issues that arose during the exploration stage. First we implemented the solutions on the train file, and at the end of the notebook we applied everything on the test file. **We note that all the detailed information below refers to the data from the train file only:**
 
-### 1. **Outliers:**
+### 1. Outliers:
 As we stated in the exploration stage, some of the features have a small number of extreme values. <br>
 Therefore, we built a function that removes rows with values smaller than the 0.01 percentile and greater than the 0.99 percentile. <br>
 **This step is not supposed to drastically change the dataset and its behaviors.**
@@ -66,15 +66,16 @@ After creating the features of the technology types, we had a total amount of 13
 <br>
 <h2>Part C - Creating & training models :hammer:</h2>
 In this part, we chose 4 models and trained them:<br>
-&emsp; 1. Logistic Regression model<br>
-&emsp; 2. Naive Bayes model<br>
-&emsp; 3. Random Forest model<br>
-&emsp; 4. Multi-Layer Perceptron model (MLP)<br><br>
-After implementing PCA, spliting the training dataset to "train" and "validation", we saw that the MLP model got the best results.
-So we will analyze its performance and later on run it with the Test dataset.
-## Feature Importance
-We want to know which features are mostly contribute the model's performance. <br>
-Since we learned in class only "Feature Importance" method which is used only for Random Forest model, we will use a technique called **"Permutation Feature Importance"**. This method helps to measure how much the model’s performance **decreases** when the values of a particular feature are randomly shuffled or permuted while keeping other variables unchanged.
+&emsp; 1. <b>Logistic Regression model</b><br>
+&emsp; 2. <b>Naive Bayes model</b><br>
+&emsp; 3. <b>Random Forest model</b><br>
+&emsp; 4. <b>Multi-Layer Perceptron model (MLP)</b><br><br>
+After implementing PCA, spliting the training dataset to "train" and "validation", we saw that the MLP model got the best results.<br>
+So we analyzed its performance and later on ran it with the Test dataset.<br>
+### Feature Importance<br>
+We wanted to know which features are mostly contribute the model's performance.<br>
+Since we learned in class only "Feature Importance" method which is used only for Random Forest model, we used a technique called <b>"Permutation Feature Importance"</b>.<br>
+This method helps to measure how much the model’s performance <b>decreases</b> when the values of a particular feature are randomly shuffled or permuted while keeping other variables unchanged.
 <br>
 <br>
 <h2>Part D - Model Evaluating :pencil:</h2>
