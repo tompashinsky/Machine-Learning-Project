@@ -55,7 +55,7 @@ Moreover, we ran the MLP without using K-Cross validation, and also plotted all 
 Finally, we created a <b>Pipline</b> that runs the main functions in the notebook:<br>
 &emsp;1. Loading the datasets and applying the preprocessing stage.<br>
 &emsp;2. Defining our best model and training it.<br>
-&emsp;3. Creating predictions on the data from the "test" dataset, and save it in a file called <b>"result_11.csv"</b>
+&emsp;3. Creating predictions on the data from the "test" dataset, and save it in a file called <b>"results_11.csv"</b>
 
 
 
