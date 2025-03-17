@@ -32,7 +32,7 @@ In this section we will addressed issues that arose during the exploration stage
 6. <b>Dimensionality Reduction:</b><br>
 &emsp;- <b>Dropped irrelevant columns</b> ("ID", "label") and selected only the top 20 most relevant technology features.<br>
 &emsp;- <b>Applied PCA</b> to retain 99% of the variance while reducing dimensionality for faster model training<br>
-&emsp;and to avoid overfitting.
+&emsp;&ensp;and to avoid overfitting.
 <br>
 <br>
 <h2>Part C - Creating & training models :hammer:</h2>
