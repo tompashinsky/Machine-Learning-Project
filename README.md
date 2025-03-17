@@ -24,9 +24,9 @@ In this section we will addressed issues that arose during the exploration stage
 3. <b>Handling Missing Values:</b><br>
 &emsp;- <b>Feature relationships:</b> We used logical rules based on correlations (e.g., "B" vs. "years_of_experience", "is_dev" vs.<br>
 &emsp;&ensp;"stack_experience")to fill missing values.<br>
-&emsp;- <b>Proportional filling:</b> For other columns, missing values were imputed to preserve the original distribution.<br>
-4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0' occurrences, assigning<br>
-&emsp;higher values to categories more associated with label '1'.<br>
+&emsp;- <b>Proportional filling:</b> For other columns, missing values were imputed to preserve the original distribution.<br><br>
+4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0'<br>
+&emsp;occurrences, assigninghigher values to categories more associated with label '1'.<br>
 5. <b>Normalization:</b> Features with wide ranges were scaled using StandardScaler to prevent bias from unnormalized data.<br>
 6. <b>Dimensionality Reduction:</b><br>
 &emsp;- <b>Dropped irrelevant columns</b> ("ID", "label") and selected only the top 20 most relevant technology features.<br>
