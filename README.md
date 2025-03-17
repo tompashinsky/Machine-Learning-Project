@@ -22,8 +22,8 @@ In this section we will addressed issues that arose during the exploration stage
 2. <b>New Features:</b> We created new features representing the candidate’s knowledge of technologies/programming<br>
 &emsp;languages and checked theircorrelation with the hiring label.<br>
 3. <b>Handling Missing Values:</b><br>
-&emsp;- <b>Feature relationships:</b> We used logical rules based on correlations (e.g., "B" vs. "years_of_experience", "is_dev" vs. "stack_experience")<br>
-&emsp;&ensp;to fill missing values.<br>
+&emsp;- <b>Feature relationships:</b> We used logical rules based on correlations (e.g., "B" vs. "years_of_experience", "is_dev" vs.<br>
+&emsp;&ensp;"stack_experience")to fill missing values.<br>
 &emsp;- <b>Proportional filling:</b> For other columns, missing values were imputed to preserve the original distribution.<br>
 4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0' occurrences, assigning<br>
 &emsp;higher values to categories more associated with label '1'.<br>
