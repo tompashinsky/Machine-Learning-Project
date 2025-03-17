@@ -17,8 +17,8 @@ After that, we plotted histograms and distributions, checked statistics (Mean, s
 <br>
 <h2>Part B - Preprocessing :pencil2:</h2>
 In this section we will addressed issues that arose during the exploration stage:<br>
-1. <b>Outliers:</b> We removed rows with values below the 0.01 percentile or above the 0.99 percentile to eliminate extreme outliers without<br>
-&emsp;significantly altering the dataset.<br>
+1. <b>Outliers:</b> We removed rows with values below the 0.01 percentile or above the 0.99 percentile to eliminate<br>
+&emsp;extreme outliers withoutsignificantly altering the dataset.<br>
 2. <b>New Features:</b> We created new features representing the candidate’s knowledge of technologies/programming languages and checked their<br>
 &emsp;correlation with the hiring label.<br>
 3. <b>Handling Missing Values:</b><br>
