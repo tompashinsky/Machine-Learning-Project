@@ -1,24 +1,17 @@
-### <center> **Introduction to Machine Learning | Final Project | Spring 2024**
+### Introduction to Machine Learning | Final Project | Spring 2024
     
-<center> *This project was submitted by Niv Noyman and Tom Pashinsky*<br>
+This project was submitted by Niv Noyman and Tom Pashinsky<br>
 
 #### In this project, we will build a model that predicts if a person will get hired for a job or not.
 <br>
 <br>
-<br>
-<br>
-<br>
-
-# **Part A - Exploration**
-### First, we will analyze the "train" and "test" datasets: <br>
-### 1. **Size:**
-How many rows and columns each dataset has: 
-### 2. **"ID" unique values:**
-We will check if all the ID's in the "ID" column appear exactly once: 
-### 3. **Missing values:**
-We will check how many missing values there are in each column (except the "ID" column):
-### 4. **Categorical variables:**
-### 5. **Statistics and Graphical Representation:**
+<h2>Part A - Exploration :mag_right:</h2>
+<b>First, we analyzed the "train" and "test" datasets:</b><br>
+&emsp;1. <b>Size:</b> How many rows and columns each dataset has?<br> 
+&emsp;2. <b>"ID" unique values:</b> Do all the ID's in the "ID" column appear exactly once?<br>
+&emsp;3. <b>Missing values:</b> How many missing values there are in each column (except the "ID" column)?<br>
+&emsp;4. <b>Categorical variables</b><br>
+&emsp;5. <b>Statistics and Graphical Representation</b><br>
 <br>
 
 ### Histograms
@@ -39,7 +32,7 @@ In order to see if there are correlations between the features, we will convert 
 <br>
 <br>
 
-# **Part B - Preprocessing**
+<h2>Part B - Preprocessing</h2>
 
 In this section we will detail issues that arose during the exploration stage. First we implemented the solutions on the train file, and at the end of the notebook we applied everything on the test file. **We note that all the detailed information below refers to the data from the train file only:**
 
