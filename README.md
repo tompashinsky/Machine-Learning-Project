@@ -12,29 +12,25 @@ This project was submitted by Niv Noyman and Tom Pashinsky<br>
 &emsp;3. <b>Missing values:</b> How many missing values there are in each column (except the "ID" column)?<br>
 &emsp;4. <b>Categorical variables</b><br>
 &emsp;5. <b>Statistics and Graphical Representation</b><br><br>
-After that, we plotted histograms and distributions of the numeric features using a technique we didn't see in class - **KDE**. <br>
-This technique helps to estimate the probability density function of a random variable. It creates a smooth curve from discretely sampled data that reflects the underlying density distribution.
-### Statistics for numeric features
-Here we will check some statistical values of the numeric features (Mean, std, min / max values etc.):
-### Statistics for categorial features
-Here we will count how many values there are in each column:
-### Correlation
-In order to see if there are correlations between the features, we will convert the categorial features to numerical ones (the conversion is only for creating the correlation map, we will convert the categorial features in a different way for building the models later on in the notebook) and then create a correlation map:
+After that, we plotted histograms and distributions, checked statistics (Mean, std, min / max values etc.) and correlation between features.
 <br>
 <br>
 <h2>Part B - Preprocessing :pencil2:</h2>
-
 In this section we will addressed issues that arose during the exploration stage:<br>
-1. <b>Outliers:</b> We removed rows with values below the 0.01 percentile or above the 0.99 percentile to eliminate extreme outliers without significantly altering the dataset.
-2. <b>New Features:</b> We created new features representing the candidate’s knowledge of technologies/programming languages and checked their correlation with the hiring label.
+1. <b>Outliers:</b> We removed rows with values below the 0.01 percentile or above the 0.99 percentile to eliminate extreme outliers without<br>
+&emsp;significantly altering the dataset.<br>
+2. <b>New Features:</b> We created new features representing the candidate’s knowledge of technologies/programming languages and checked their<br>
+&emsp;correlation with the hiring label.<br>
 3. <b>Handling Missing Values:</b><br>
-&emsp;- Feature relationships: We used logical rules based on correlations (e.g., "B" vs. "years_of_experience", "is_dev" vs. "stack_experience") to fill missing values.<br>
-&emsp;- Proportional filling: For other columns, missing values were imputed to preserve the original distribution.
-4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0' occurrences, assigning higher values to categories more associated with label '1'.
-5. <b>Normalization:</b> Features with wide ranges were scaled using StandardScaler to prevent bias from unnormalized data.
+&emsp;- <b>Feature relationships:</b> We used logical rules based on correlations (e.g., "B" vs. "years_of_experience", "is_dev" vs. "stack_experience")<br>
+&emsp;&ensp;to fill missing values.<br>
+&emsp;- <b>Proportional filling:</b> For other columns, missing values were imputed to preserve the original distribution.<br>
+4. <b>Categorical Variables:</b> We converted categorical features to numeric by calculating the ratio of label '1' to label '0' occurrences, assigning<br>
+&emsp;higher values to categories more associated with label '1'.<br>
+5. <b>Normalization:</b> Features with wide ranges were scaled using StandardScaler to prevent bias from unnormalized data.<br>
 6. <b>Dimensionality Reduction:</b><br>
-&emsp; -Dropped irrelevant columns ("ID", "label") and selected only the top 20 most relevant technology features.<br>
-&emsp; -Applied PCA to retain 99% of the variance while reducing dimensionality for faster model training and to avoid overfitting.
+&emsp;- <b>Dropped irrelevant columns</b> ("ID", "label") and selected only the top 20 most relevant technology features.<br>
+&emsp;- <b>Applied PCA</b> to retain 99% of the variance while reducing dimensionality for faster model training and to avoid overfitting.
 <br>
 <br>
 <h2>Part C - Creating & training models :hammer:</h2>
@@ -51,7 +47,7 @@ Since we learned in class only "Feature Importance" method which is used only fo
 <br>
 <br>
 <h2>Part D - Model Evaluating :pencil:</h2>
-Here, we cretaed a Confusion Matrix for the MLP's peformance and analyzed the results.<br>
+Here, we cretaed a <b>Confusion Matrix</b> for the MLP's peformance and analyzed the results.<br>
 Moreover, we ran the MLP without using K-Cross validation, and also plotted all the ROC curves of the 4 models.
 <br>
 <br>
