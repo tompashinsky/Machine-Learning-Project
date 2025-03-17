@@ -1,4 +1,4 @@
-### Introduction to Machine Learning | Final Project | Spring 2024
+<h1>Introduction to Machine Learning | Final Project | Spring 2024</h1>
     
 This project was submitted by Niv Noyman and Tom Pashinsky<br>
 
